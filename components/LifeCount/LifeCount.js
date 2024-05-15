@@ -25,22 +25,22 @@ export function LifeCount() {
 }
 
 export function LifeCountReverse() {
-	const [count, setCount] = useState(20);
+	const [count, setCountRev] = useState(20);
 
-	function increment() {
-		setCount(count + 1);
+	function incrementRev() {
+		setCountRev(count + 1);
 	}
 
-	function decrement() {
-		setCount(count - 1);
+	function decrementRev() {
+		setCountRev(count - 1);
 	}
 
 	return (
 		<>
 			<View style={s.buttonContainerReverse}>
-				<Button title="+" onPress={increment} />
+				<Button title="+" onPress={incrementRev} />
 				<Text style={s.text}>{count}</Text>
-				<Button title="-" onPress={decrement} />
+				<Button title="-" onPress={decrementRev} />
 			</View>
 		</>
 	);
@@ -48,5 +48,6 @@ export function LifeCountReverse() {
 
 // export function Reset() {
 // 	setCount(20);
-// 	<Button title="lll" onPress={console.log('test')} />;
+// 	setCountRev(20);
+// 	console.log('test');
 // }
