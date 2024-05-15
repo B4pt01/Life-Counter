@@ -5,15 +5,16 @@ import { Nav } from './components/Nav/Nav';
 
 export default function App() {
 	function Reset() {
+		const [count, countRev, setCount, setCountRev] = useState(20);
 		setCount(20);
 		setCountRev(20);
 		console.log('test');
 	}
 	return (
 		<>
-			<LifeCountReverse props />
+			<LifeCountReverse CountRev={countRev} />
 			<Button title="lll" onPress={Reset} />
-			<LifeCount />
+			<LifeCount Count={count} />
 		</>
 	);
 }
