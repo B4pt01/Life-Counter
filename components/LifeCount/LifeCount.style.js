@@ -7,6 +7,8 @@ export const s = StyleSheet.create({
 	},
 	buttonContainer: {
 		flex: 1,
+		width: '100%',
+		height: '100%',
 		justifyContent: 'center',
 		alignItems: 'center',
 		flexDirection: 'row',
@@ -15,6 +17,8 @@ export const s = StyleSheet.create({
 	buttonContainerReverse: {
 		transform: [{ rotate: '180deg' }],
 		flex: 1,
+		width: '100%',
+		height: '100%',
 		justifyContent: 'center',
 		alignItems: 'center',
 		flexDirection: 'row',
